@@ -4,9 +4,11 @@ new Vue({
     names:['Juan','Chacón','Pedro','Pepe'],
   },
   methods:{
-    addName:function(){
-      this.names.push(this.newName);
-      this.newName = '';
+    onKeyUp:function(){
+      alert('Key Up');
+    },
+    onBlur:function(){
+      console.log('Blur');
     }
   }
 });

@@ -7,10 +7,9 @@
   </head>
   <body>
     <div id="demo" class="container">
-      <ul>
-        <li v-repeat="name: names">{{ name }}</li>
-      </ul>
-      <input type="text" placeholder="Agregar nombre" v-model="newName" v-on="blur:addName">
+      <input type="text" v-on="
+      keyup: onKeyUp | key 'enter',
+      blur: onBlur">
     </div>
     <script type="text/javascript" src="vue.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
