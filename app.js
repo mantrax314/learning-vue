@@ -1,12 +1,12 @@
 new Vue({
   el:'#demo',
   data:{
-    name:'cool',
+    names:['Juan','Chacón','Pedro','Pepe'],
   },
-  ready:function(){
-    that = this;
-    setInterval(function(){
-      that.name='Updated';
-    },5000);
-  },
+  methods:{
+    addName:function(){
+      this.names.push(this.newName);
+      this.newName = '';
+    }
+  }
 });
